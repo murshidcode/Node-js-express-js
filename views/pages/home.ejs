@@ -1,0 +1,105 @@
+<%- include('../common/head')%>
+<body >
+    <header style="position: fixed;" class="container-fluid">
+        <%- include('../common/header')%>
+    </header>
+   <main class="bg-black">
+     <div class="container-fluid bg-black">
+           <img class="w-100 " style="height: 800px;" src="https://miro.medium.com/v2/resize:fit:1200/1*4b0uGW5IQMbl6M5EA8vXfg.png" href="">
+      </div> 
+       <div class="bg-dark text-light">
+        <section>
+            <h2>Node.js</h2>
+            <p>
+              <strong>Node.js</strong> is a powerful, open-source, cross-platform JavaScript runtime environment that allows developers to run JavaScript code on the server side.
+            </p>
+            <p>
+              <strong>JavaScript on the Server:</strong> Traditionally, JavaScript was confined to the browser, but Node.js brought it to the server side, enabling developers to use JavaScript to write server-side logic, such as handling HTTP requests, accessing databases, and interacting with file systems.
+            </p>
+            <p>
+              <strong>Built on Chrome's V8 Engine:</strong> Node.js is built on Google's V8 JavaScript engine, which is the same engine that powers Google Chrome. This makes Node.js fast and efficient, as V8 compiles JavaScript into machine code.
+            </p>
+            <p>
+              <strong>Asynchronous and Event-Driven:</strong> One of the key features of Node.js is its asynchronous, non-blocking I/O model. This means that Node.js can handle many operations, such as reading files or querying databases, in parallel, without waiting for one to finish before starting another. This makes it highly efficient and suitable for building scalable applications.
+            </p>
+            <p>
+              <strong>Single-Threaded but Scalable:</strong> Despite being single-threaded, Node.js is designed to handle multiple connections simultaneously. This is achieved through its event loop and callbacks, allowing it to scale effectively without the need for multiple threads.
+            </p>
+            <p>
+              <strong>Package Ecosystem (npm):</strong> Node.js comes with a package manager called npm (Node Package Manager), which provides access to a vast library of open-source packages and modules. This ecosystem allows developers to quickly add functionality to their applications by installing packages.
+            </p>
+            <p>
+              <strong>Use Cases:</strong> Node.js is often used for building web servers, APIs, real-time applications like chat apps, and microservices. Its speed and scalability make it a popular choice for high-traffic websites and services like Netflix, LinkedIn, and Uber.
+            </p>
+          </section>
+          
+          <section>
+            <h2>Express.js</h2>
+            <p>
+              <strong>Express.js</strong> is a minimal and flexible Node.js web application framework that provides a robust set of features for building web and mobile applications.
+            </p>
+            <p>
+              <strong>Simplified Web Server Development:</strong> Express.js builds on top of Node.js, making it easier to manage HTTP requests and responses. While Node.js provides the core server capabilities, Express.js offers additional tools and features to streamline the development process.
+            </p>
+            <p>
+              <strong>Routing:</strong> Express.js offers a powerful and straightforward routing mechanism that lets developers define how an application responds to different HTTP methods (GET, POST, PUT, DELETE) and URLs. This is essential for building RESTful APIs.
+            </p>
+            <p>
+              <strong>Middleware:</strong> Middleware functions in Express.js allow developers to add custom logic to the request/response cycle. Middleware can handle tasks like parsing incoming requests (e.g., JSON, form data), logging, authentication, error handling, and more. This modular approach promotes code reuse and cleaner architecture.
+            </p>
+            <p>
+              <strong>Templating Engines:</strong> Express.js supports various templating engines like Pug, EJS, and Handlebars, which help generate HTML dynamically by embedding JavaScript logic within the HTML.
+            </p>
+            <p>
+              <strong>Extensibility:</strong> Express.js is highly extensible through its middleware system and third-party modules available via npm. This allows developers to add features like authentication, session management, and data validation with ease.
+            </p>
+            <p>
+              <strong>Lightweight and Unopinionated:</strong> Unlike some other web frameworks that come with a lot of built-in features and conventions, Express.js is unopinionated, meaning it gives developers the freedom to structure their applications as they see fit. It provides only the core features, leaving developers to choose additional tools and libraries as needed.
+            </p>
+            <p>
+              <strong>Performance:</strong> Express.js is designed to be fast and efficient, making it a suitable choice for high-performance web applications. Its minimalistic design helps keep the application lightweight.
+            </p>
+            <p>
+              <strong>Use Cases:</strong> Express.js is commonly used for building RESTful APIs, single-page applications (SPAs), and traditional web applications. It is a popular choice for small to medium-sized projects due to its simplicity and flexibility.
+            </p>
+          </section>
+          
+      </div>
+        <footer style="background-color: #343a40; color: #ffffff; padding: 20px 0; text-align: center;">
+            <div class="container">
+                <div class="row">
+                    
+                    
+                    <div class="col-md-4">
+                        <h5><%=students.name%></h5>
+                        <p>We are a tech company dedicated to providing innovative solutions that help businesses thrive in a digital world. Our team of experts is committed to delivering quality and excellence.</p>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <h5>Quick Links</h5>
+                        <ul style="list-style-type: none; padding: 0;">
+                            <li><a href="" style="color: #ffffff; text-decoration: none;">LogIn</a></li>
+                            <li><a href="" style="color: #ffffff; text-decoration: none;">About</a></li>
+                            <li><a href="" style="color: #ffffff; text-decoration: none;">Contact</a></li>
+                            <li><a href="" style="color: #ffffff; text-decoration: none;">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <h5>Contact Us</h5>
+                        <p>Email: info@yourcompany.com</p>
+                        <p>Phone: +123 456 7890</p>
+                        <p>Address: 123 Tech Street, Innovation City, Country</p>
+                    </div>
+                </div>
+                <hr style="border-color: #555;">
+                <p>&copy; <%= new Date().getFullYear(); %> Wezlon. All rights reserved.</p>
+            </div>
+        </footer>
+        
+      
+      <footer class="justify" style="margin-bottom: -15px;">
+        <%- include('../common/footer')%>
+    </footer>
+   </main>  
+</body>
